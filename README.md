@@ -2,8 +2,8 @@
 A bash script to call the whoapi.com availability api from a list of domains.
 
 # Requirements
-- jq installed `sudo apt install jq` on Ubuntu to install. (this is to parse the JSON of the api response.)
-- bash
+- jq installed. `sudo apt install jq` on Ubuntu to install. (this is to parse the JSON of the api response.)
+- bash.
 This script has been tested to work on Ubuntu 20.04.6 LTS.
 
 # Usage
@@ -16,3 +16,6 @@ Edit the apikey variable to your whoapi.com api key. (Replace the <API_KEY>)
 Exit nano.
 Run the script.
 `bash whoapi.sh`
+
+# Optional changes
+- you can remove the `line=$(echo "$line" | tr -d '\r')` line if your text document is in the unix format.
